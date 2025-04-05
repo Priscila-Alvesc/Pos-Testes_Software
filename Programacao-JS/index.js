@@ -40,5 +40,8 @@ let tamanho = 'P'
 
 console.log('O peso é: ' + peso);
 
+//hoisntin  -- içamento ou elevação
+
+
 
 
