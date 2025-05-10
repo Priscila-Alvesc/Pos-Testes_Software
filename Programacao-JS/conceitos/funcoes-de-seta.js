@@ -66,3 +66,8 @@ const exibirNomeDoDog = (nome) => {
   //arrow function sem bloco com returno 'automatico'
   const dobrar = (numero) => numero * 2
   console.log(dobrar)
+
+
+
+
+  
