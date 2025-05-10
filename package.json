@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Priscila-Alvesc/Pos-Testes_Software/issues"
   },
-  "homepage": "https://github.com/Priscila-Alvesc/Pos-Testes_Software#readme"
+  "homepage": "https://github.com/Priscila-Alvesc/Pos-Testes_Software#readme",
+  "devDependencies": {
+    "mocha": "^11.2.2"
+  }
 }

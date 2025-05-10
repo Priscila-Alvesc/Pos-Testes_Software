@@ -47,7 +47,12 @@ function verificarSeEstaSatisfeito() {
   console.log(`Acaboooooou o passeio, Pitoco!`)
 }
 
-verificarSeEstaSatisfeito(10)
+
+//verificarSeEstaSatisfeito(10)
+
+export {
+  verificarSeEstaSatisfeito
+}
 
 // let nVoltas = 0
 
