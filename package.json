@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Priscila-Alvesc/Pos-Testes_Software#readme",
   "devDependencies": {
-    "mocha": "^11.2.2"
+    "mocha": "^11.2.2",
+    "standard": "^17.1.2"
   }
 }
