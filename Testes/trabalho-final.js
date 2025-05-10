@@ -30,5 +30,5 @@ describe('Testes da disciplina - fundamentos JS', () => {
     const resultado = await buscarDadoAsync();
     assert.strictEqual(resultado, 'Pipoca');
   });
-
+  
 });
