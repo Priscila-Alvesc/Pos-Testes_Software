@@ -1,0 +1,21 @@
+{
+  "name": "pos-testes_software",
+  "version": "1.0.0",
+  "description": "Repositório, dedicado a fins acadêmicos relacionados à qualidade e automação de testes. Este espaço foi criado para reunir e compartilhar conhecimento sobre os seguintes temas:",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Priscila-Alvesc/Pos-Testes_Software.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Priscila-Alvesc/Pos-Testes_Software/issues"
+  },
+  "homepage": "https://github.com/Priscila-Alvesc/Pos-Testes_Software#readme"
+}
