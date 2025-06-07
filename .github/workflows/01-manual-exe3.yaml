@@ -1,36 +1,17 @@
-# CI de Nível 01 - Disparo manual a partir de 1 clique no botão
-
-#nome do nosso 'pipeline'
-name: 'Execução Manual'
-
+name: Testes Manuais com Mocha
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Permite execução manual
 
-# trabalhos/tarefas dentro do pipleine = jobs
 jobs:
-  Testes:
-    # maquina que o job vai executar
+  test:
     runs-on: ubuntu-latest
-
-    # passos do job
     steps:
-      #clone do projeto
-      - uses: actions/checkout@v4
+      - name: Checkout do código
+        uses: actions/checkout@v3
 
-      #instalação do node
-      - uses: actions/setup-node@V4
-        with:
-          node-version: 22.x
+      - name: Instalar dependências
+        run: yarn install
 
-          # instalação do Yarn
-      - name: instalando Yarn
-        run: npm install -g yarn
-
-      #instalação das dependências
-      - name: Instalando as dependências
-        run: yarn
-
-      #Executar os testes
-      - name: Executando testes
-        run: yarn run Testes
+      - name: Executar testes com Mocha
+        run: yarn test
