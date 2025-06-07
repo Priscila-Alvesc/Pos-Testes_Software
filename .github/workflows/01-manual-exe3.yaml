@@ -31,10 +31,6 @@ jobs:
       - name: Instalando as dependências
         run: yarn
 
-      #Instalação do playwringht
-      - name: Instalando mocha
-        run: yarn mocha install
-
       #Executar os testes
-      - name: Executando testes 
+      - name: Executando testes
         run: yarn run Testes
