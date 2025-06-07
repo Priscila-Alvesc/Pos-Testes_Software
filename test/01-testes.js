@@ -9,7 +9,7 @@ TDD
     refatoro o código (refatorar o código)
     ASSERTION/ASSERCAO (AFIRMAÇÃO/ASSERÇÃO)
      verificar se um comportamento está de acordo com o esperado (verificar se um comportamento está de acordo com o esperado)
-*/
+
 
 import { exibirNomeDogFormatado } from '../Programacao-JS/conceitos/testes-de-unidade.js'
 import assert from 'node:assert'
@@ -19,9 +19,10 @@ describe('Testes do Projeto', () => { // Ou, mais descritivo: 'Testes da Unidade
         assert.strictEqual(exibirNomeDogFormatado('Mimosa'), 'MIMOSA')
         // verifique se: valor atual é igual ao valor esperado
     })
-    it('primeiro teste', () => { // Exemplo: 'primeiro teste de exemplo'
-    })
+    // Exemplo de teste pendente (placeholder)
+    it('primeiro teste') // Exemplo: 'primeiro teste de exemplo'
     it('segundo teste', () => { // Exemplo: 'segundo teste de exemplo que deve falhar'
         throw new Error()
     })
 })
+*/
