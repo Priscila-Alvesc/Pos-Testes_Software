@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.007" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-06-07T20:29:47" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Testes da disciplina - fundamentos JS" timestamp="2025-06-07T20:29:47" tests="5" file="C:\Users\alves\Desktop\Pos-Testes_Software\test\trabalho-final.js" time="0.005" failures="0">
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO informar um nome para o Pet, DEVE ser impresso na tag com letras maiúsculas" time="0.001" classname="QUANDO informar um nome para o Pet, DEVE ser impresso na tag com letras maiúsculas">
+    </testcase>
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO a idade = 1 + porte M, DEVE ser permitida a adoção" time="0.000" classname="QUANDO a idade = 1 + porte M, DEVE ser permitida a adoção">
+    </testcase>
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO o peso = 14.5, DEVE ser retornado 4350 gramas para o consumo diário" time="0.000" classname="QUANDO o peso = 14.5, DEVE ser retornado 4350 gramas para o consumo diário">
+    </testcase>
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO o porte = pequeno, DEVE ser retornada a atividade adequada" time="0.000" classname="QUANDO o porte = pequeno, DEVE ser retornada a atividade adequada">
+    </testcase>
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona" time="0.001" classname="QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona">
+    </testcase>
+  </testsuite>
+</testsuites>
