@@ -1,0 +1,40 @@
+# CI de Nível 01 - Disparo manual a partir de 1 clique no botão
+
+#nome do nosso 'pipeline'
+name: 'Execução Manual'
+
+
+on:
+  workflow_dispatch:
+
+# trabalhos/tarefas dentro do pipleine = jobs
+jobs:
+  Testes:
+    # maquina que o job vai executar
+    runs-on: ubuntu-latest
+
+    # passos do job
+    steps:
+      #clone do projeto
+      - uses: actions/checkout@v4
+
+      #instalação do node
+      - uses: actions/setup-node@V4
+        with:
+          node-version: 22.x
+
+          # instalação do Yarn
+      - name: instalando Yarn
+        run: npm install -g yarn
+
+      #instalação das dependências
+      - name: Instalando as dependências
+        run: yarn
+
+      #Instalação do playwringht
+      - name: Instalando mocha
+        run: yarn mocha install
+
+      #Executar os testes
+      - name: Executando testes 
+        run: yarn run Testes
