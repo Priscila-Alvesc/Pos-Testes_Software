@@ -1,4 +1,4 @@
-name: Testes Manuais com Mocha
+name: Pipe N1 Testes com Mocha
 
 on:
   workflow_dispatch:  # Permite execução manual
@@ -18,9 +18,9 @@ jobs:
 
       - name: Publicar Relatório de Testes JUnit
         uses: actions/upload-artifact@v4
-        if: always() # Garante que o relatório seja publicado mesmo se os testes falharem
+        if: always() 
         with:
-          name: relatorio-junit
+          name: relatorio-execucao-manual
           path: reports/junit.xml
 
       
