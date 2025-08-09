@@ -20,7 +20,7 @@ const swaggerOptions = {
   apis: ['./controller/*.js'],
 };
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/docs-apis', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Rotas
 app.use('/', userController);
