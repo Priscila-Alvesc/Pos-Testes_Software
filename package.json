@@ -17,10 +17,15 @@
   "bugs": {
     "url": "https://github.com/Priscila-Alvesc/Pos-Testes_Software/issues"
   },
-  "homepage": "https://github.com/Priscila-Alvesc/Pos-Testes_Software#readme",  
+  "homepage": "https://github.com/Priscila-Alvesc/Pos-Testes_Software#readme",
   "devDependencies": {
     "mocha": "^11.5.0",
     "mocha-junit-reporter": "^2.2.1",
     "standard": "^17.1.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   }
 }
