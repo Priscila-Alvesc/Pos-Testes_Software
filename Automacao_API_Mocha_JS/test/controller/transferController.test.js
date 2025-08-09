@@ -18,7 +18,7 @@ describe('Transfer Controller', () => {
                     "valor": 100
                 });
             expect(resposta.status).to.equal(400);
-            console.log(resposta.body);
+            expect(resposta.body).to.have.property('error', 'Remetente ou destinatário inválido');
         });
     });
 });
