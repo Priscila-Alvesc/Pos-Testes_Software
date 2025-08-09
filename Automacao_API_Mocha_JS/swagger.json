@@ -1,0 +1,93 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API de Transferências",
+    "version": "1.0.0",
+    "description": "API para testes e automação com Mocha e Supertest"
+  },
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Registra um novo usuário",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["login", "senha", "nome"],
+                "properties": {
+                  "login": { "type": "string" },
+                  "senha": { "type": "string" },
+                  "nome": { "type": "string" },
+                  "favorecidos": { "type": "array", "items": { "type": "string" } }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Usuário registrado" },
+          "400": { "description": "Usuário já existe" }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "summary": "Realiza login do usuário",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["login", "senha"],
+                "properties": {
+                  "login": { "type": "string" },
+                  "senha": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Login realizado" },
+          "400": { "description": "Login ou senha inválidos" }
+        }
+      }
+    },
+    "/users": {
+      "get": {
+        "summary": "Lista todos os usuários",
+        "responses": {
+          "200": { "description": "Lista de usuários" }
+        }
+      }
+    },
+    "/transfer": {
+      "post": {
+        "summary": "Realiza uma transferência",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["remetente", "destinatario", "valor"],
+                "properties": {
+                  "remetente": { "type": "string" },
+                  "destinatario": { "type": "string" },
+                  "valor": { "type": "number" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Transferência realizada" },
+          "400": { "description": "Erro na transferência" }
+        }
+      }
+    }
+  }
+}

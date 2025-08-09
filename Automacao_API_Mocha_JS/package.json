@@ -1,0 +1,14 @@
+{
+  "name": "automacao_api_mocha_js",
+  "version": "1.0.0",
+  "description": "API para testes e automação com Mocha e Supertest",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.7.1"
+  }
+}
