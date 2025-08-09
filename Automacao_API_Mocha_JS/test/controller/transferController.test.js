@@ -15,7 +15,7 @@ describe('Transfer Controller', () => {
                 .send({
                     "remetente": "julio",
                     "destinatario": "priscila",
-                    "valor": 100
+                    "valor": 1000
                 });
             expect(resposta.status).to.equal(400);
             expect(resposta.body).to.have.property('error', 'Remetente ou destinatário inválido');
